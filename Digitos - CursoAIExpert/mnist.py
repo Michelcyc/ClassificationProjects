@@ -4,10 +4,10 @@ from tensorflow.keras.models import Sequential # atualizado: tensorflow==2.0.0-b
 from tensorflow.keras.layers import Dense, Flatten, Dropout # atualizado: tensorflow==2.0.0-beta1
 from tensorflow.python.keras.utils import np_utils # atualizado: tensorflow==2.0.0-beta1
 from tensorflow.keras.layers import Conv2D, MaxPooling2D # atualizado: tensorflow==2.0.0-beta1
-from tensorflow.python.keras.layers.normalization import BatchNormalization # atualizado: tensorflow==2.0.0-beta1
-
+#from tensorflow.python.keras.layers.normalization import BatchNormalization # atualizado: tensorflow==2.0.0-beta1
+#erro aqui na normalizacao
 (X_treinamento, y_treinamento), (X_teste, y_teste) = mnist.load_data()
-plt.imshow(X_treinamento[0], cmap = 'gray')
+plt.imshow(X_treinamento[1], cmap = 'gray')
 plt.title('Classe ' + str(y_treinamento[0]))
 
 previsores_treinamento = X_treinamento.reshape(X_treinamento.shape[0],
